@@ -1,0 +1,9 @@
+id: the-art-of-web
+name: The Art of Web
+type: hidden
+award:
+    emoji: 🦄
+image: pwncollege/challenge-legacy:latest
+modules:
+  - id: web-application-security
+

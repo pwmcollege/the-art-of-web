@@ -1,0 +1,20 @@
+name: Web Application Security
+challenges:
+    - id: sticky-tar-pit
+      name: Unsafe Archive Handling
+      import:
+          dojo: fluffy~ea96493b
+          module: web
+          challenge: sticky-tar-pit
+    - id: leaky-tar-pit
+      name: Unsafe Archive Handling 2
+      import:
+          dojo: fluffy~ea96493b
+          module: web
+          challenge: leaky-tar-pit
+    - id: slippery-tar-pit
+      name: Unsafe Archive Handling 3
+      import:
+          dojo: fluffy~ea96493b
+          module: web
+          challenge: slippery-tar-pit
