@@ -27,6 +27,12 @@ challenges:
           dojo: fluffy~ea96493b
           module: web
           challenge: slippery-tar-pit
+    - id: everlasting-epistolary
+      name: Everlasting Epistolary
+      import:
+          dojo: intro-to-cybersecurity
+          module: integrated-security
+          challenge: "secure-chat-5"
     - id: paranoid-installer
       name: Paranoid Installer
       import:
