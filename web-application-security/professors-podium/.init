@@ -2,10 +2,9 @@
 export PYTHONDONTWRITEBYTECODE=1
 mkdir -p /var/log/gunicorn
 
+chmod -R -s /challenge
 chmod 544 /challenge/wsgi.py
 mv /challenge/wsgi.py /opt/lecture/
-
-chmod -R -s /challenge
 
 cd /opt/lecture
 gunicorn --daemon

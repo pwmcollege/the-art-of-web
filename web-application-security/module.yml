@@ -1,7 +1,7 @@
 name: Web Application Security
 resources:
     - type: header
-      content: Epipelagic Zone
+      content: The Sunlight Zone
     - id: the-missing-link
       name: The Missing Link
       type: challenge
@@ -27,7 +27,7 @@ resources:
           challenge: pwn-backups
 
     - type: header
-      content: Mesopelagic Zone
+      content: The Twilight Zone
     - id: directory-delivery-dilemma
       name: Directory Delivery Dilemma
       type: challenge
@@ -38,7 +38,7 @@ resources:
           challenge: slippery-tar-pit
 
     - type: header
-      content: Bathypelagic Zone
+      content: The Midnight Zone
     - id: everlasting-epistolary
       name: Everlasting Epistolary
       type: challenge
@@ -48,7 +48,7 @@ resources:
           challenge: "secure-chat-5"
 
     - type: header
-      content: Abyssopelagic Zone
+      content: The Abyss
     - id: paranoid-installer
       name: Paranoid Installer
       type: challenge
@@ -58,7 +58,7 @@ resources:
           challenge: "41"
 
     - type: header
-      content: Hadalpelagic Zone
+      content: The Trenches
     - id: professors-podium
       name: Professor's Podium
       image: pwncollege/challenge-lecture
