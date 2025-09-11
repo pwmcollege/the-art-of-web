@@ -1,4 +1,4 @@
-## The End of our Journey 🌊
+## The end of our journey 🌊
 
 This is where you prove everything you've learned actually stuck. Every challenge in this module comes without hints, walkthroughs, or hand-holding.
 
