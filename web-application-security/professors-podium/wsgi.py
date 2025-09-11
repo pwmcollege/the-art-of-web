@@ -11,7 +11,6 @@ from flask import Flask, redirect, render_template, request
 
 app = Flask(__name__)
 
-YAN_GDB = ("Ou5Bhe7o3J0", 36029)
 
 try:
     with open("/challenge/.config", "r") as f:
@@ -19,19 +18,10 @@ try:
         TOTAL_TIME = int(TOTAL_TIME)
 
 except FileNotFoundError:
-    flag_path = "/flag"
+    if os.path.exists("/flag"):
+        os.remove("/flag")
 
-    if not os.path.islink(flag_path):
-        fd = os.open(
-            flag_path, os.O_WRONLY | os.O_CREAT | os.O_TRUNC | os.O_NOFOLLOW, 0o644
-        )
-        try:
-            os.write(fd, "pwn.college{3v3ry0n3_sh0uld_4ppr3c14t3_z4rdus!!!}\n".encode())
-            os.fsync(fd)
-        finally:
-            os.close(fd)
-
-    YOUTUBE_ID, TOTAL_TIME = YAN_GDB  # enforce zardus gdb
+    YOUTUBE_ID, TOTAL_TIME = ("Ou5Bhe7o3J0", 36029)
 
 
 def open_timeline_file():
