@@ -5,5 +5,9 @@ award:
     emoji: 🦄
 image: pwncollege/challenge-legacy:latest
 modules:
-  - id: web-application-security
-
+    - id: introduction
+      name: Introduction
+      import:
+          dojo: fundamentals
+          module: talking-web
+    - id: web-application-security
