@@ -60,11 +60,11 @@ document.body.addEventListener("mousedown", (e) => {
     }
 })
 
-document.body.addEventListener("mousemove", (e) => {
+document.addEventListener("mousemove", (e) => {
     // idk
 })
 
-document.body.addEventListener("mouseup", async (e) => {
+document.addEventListener("mouseup", async (e) => {
     if (!clicked) {
         return; // We did not start off by clicking within the canvas
     }
