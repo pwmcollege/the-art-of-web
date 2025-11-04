@@ -3,7 +3,7 @@ name: The Art of Web
 type: hidden
 award:
     emoji: 🦄
-image: pwmcollege/challenge-main:latest
+image: pwmcollege/challenge-web:latest
 modules:
     - id: community
     - id: dom-clobbering
