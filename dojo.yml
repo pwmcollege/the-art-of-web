@@ -5,7 +5,6 @@ award:
     emoji: 🦄
 image: pwmcollege/challenge-web:latest
 modules:
-    - id: community
     - id: dom-clobbering
     - id: web-server-exploitation
     - id: web-application-security
