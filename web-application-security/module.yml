@@ -12,3 +12,5 @@ challenges:
       interfaces:
           - name: Challenge
             port: 80
+    - id: secret-whispers
+      name: Secret Whispers
