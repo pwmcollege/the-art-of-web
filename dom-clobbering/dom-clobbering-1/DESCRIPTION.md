@@ -1,0 +1,3 @@
+This server has a very strong Content-Security-Policy, so it should be impossible for attackers to manipulate the webpage...
+
+What if the elements that the JavaScript is looking for are not quite what it expects?
