@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <script nonce="{{nonce}}">
+        window.mode = "/static/main.js"
+    </script>
+    <script src="/static/game.js" type="module" nonce="{{nonce}}" defer></script>
+    <link rel="stylesheet" href="/static/main.css"></link>
+    <title>pwn.golf</title>
+</head>
+
+<body class="flex-vertical">
+    <div class="x-center">
+        <header>PWN.GOLF</header>
+    </div>
+    {% if logged_in %}
+    <a href="/logout">Log Out</a>
+    {% else %}
+    <a href="/login">Log In</a>
+    <a href="/register">Register</a>
+    {% endif %}
+    {% if username %}
+    <div>{{username|safe}}'s Game</div>
+    {% endif %}
+    <div class="x-center">
+        <div class="absolute-container">
+            <img src="/static/hole.svg" id="hole" draggable="false">
+            <img src="/static/golf-ball.svg" id="ball" draggable="false">
+            <canvas id="game-canvas" width="500" height="500"></canvas>
+        </div>
+        {% if logged_in %}
+        <div class="flex-vertical">
+            <button id="start-record">Start Recording</button>
+            <button id="stop-record" disabled>Stop Recording</button>
+            <button id="submit-record" disabled>Submit Recording</button>
+            <div>Share your recording:<a href="http://challenge.localhost/share?username={{username|urlencode}}">http://challenge.localhost/share?username={{username|urlencode}}</a></div>
+        </div>
+        {% endif %}
+    </div>  
+</body>

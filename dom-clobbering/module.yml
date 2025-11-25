@@ -2,3 +2,5 @@ name: DOM Clobbering
 challenges:
     - id: dom-clobbering-1
       name: Baby's First DOM Clobbering
+    - id: dom-clobbering-2
+      name: Clobbering Links
