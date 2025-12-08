@@ -1,1 +1,3 @@
-Roses are red, proxies relay. Your upstream server? It's mine today.
+Port 1337: Elite access only\
+Population limit: 1\
+Current occupants: ***NOT you***

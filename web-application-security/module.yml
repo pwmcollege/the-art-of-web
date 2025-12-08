@@ -1,7 +1,7 @@
 name: Web Application Security
 challenges:
     - id: proxy-switcheroo
-      name: Upstream Betrayal
+      name: Ready Player 1337
     - id: lecture-shell
       name: Technical Issues
       image: pwmcollege/challenge-lecture
