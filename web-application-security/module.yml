@@ -1,6 +1,6 @@
 name: Web Application Security
 challenges:
-    - id: proxy-switch
+    - id: proxy-switcheroo
       name: Upstream Betrayal
     - id: lecture-shell
       name: Technical Issues
@@ -16,3 +16,5 @@ challenges:
             port: 80
     - id: csp-misconfig
       name: Secret Whispers
+    - id: ssti-switcheroo
+      name: Shell's Kitchen
