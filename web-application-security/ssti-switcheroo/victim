@@ -42,26 +42,11 @@ if __name__ == "__main__":
     except FileNotFoundError:
         flag = "pwn.college{no_flag}"
 
-    print(f"Visiting {challenge_url}")
-    browser.get(challenge_url)
-
-    print("Setting cookie...")
-    browser.add_cookie(
-        {
-            "name": "flag",
-            "value": flag,
-            "domain": "challenge.localhost",
-            "path": "/",
-            "httponly": True,
-            "sameSite": "Strict",
-        }
-    )
-
     browser.get(f"{challenge_url}register")
     print("Registering an account...")
     browser.find_element(By.NAME, "username").send_keys(os.urandom(32).hex())
-    browser.find_element(By.NAME, "password").send_keys(os.urandom(32).hex())
-    browser.find_element(By.NAME, "submit").submit()
+    browser.find_element(By.NAME, "password").send_keys(flag)
+    # browser.find_element(By.NAME, "submit").submit()
 
     time.sleep(3)
-    print("Registered!")
+    # print("Registered!")
